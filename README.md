@@ -46,23 +46,23 @@ docker-compose run --rm backend python promote_to_admin.py nombre_usuario
 docker-compose down
 ```
 
-👀 ¿Cómo ver la aplicación?
+## 👀 ¿Cómo ver la aplicación?
 
-    Accedé a http://localhost:3000 para ver la página principal. La plataforma incluye:
+  - Accedé a http://localhost:3000 para ver la página principal. La plataforma incluye:
 
-    📈 Visualización en tiempo real de valores de acciones y criptomonedas.
+  - 📈 Visualización en tiempo real de valores de acciones y criptomonedas.
 
-    🔐 Registro y login de usuarios con autenticación segura vía JWT.
+  - 🔐 Registro y login de usuarios con autenticación segura vía JWT.
 
-    ⭐ Sistema de favoritos para guardar tus instrumentos preferidos.
+  - ⭐ Sistema de favoritos para guardar tus instrumentos preferidos.
 
-    🔎 Buscador para filtrar rápidamente acciones y monedas.
+  - 🔎 Buscador para filtrar rápidamente acciones y monedas.
 
-    📟 Modal informativo con datos históricos al seleccionar una acción o moneda.
+  - 📟 Modal informativo con datos históricos al seleccionar una acción o moneda.
 
-    🔌 Servicios backend que consultan Alpha Vantage y CoinGecko para obtener valores actualizados.
+  - 🔌 Servicios backend que consultan Alpha Vantage y CoinGecko para obtener valores actualizados.
 
-    🧠 Manejo de estado global (store) para instrumentos y favoritos.
+  - 🧠 Manejo de estado global (store) para instrumentos y favoritos.
 
 ---
 
