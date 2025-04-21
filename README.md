@@ -51,6 +51,7 @@ docker --version
 ---
 
 ## 📦 Instalación con Docker (recomendado)
+🛑 Aviso: El repositorio incluye dos submodulos, es necesario clonarlo con git clone --recurse-submodules o garantizar la descarga de ambos submodulos.
 
 ```bash
 git clone --recurse-submodules git@github.com:braianowen/puente-trading-platform.git
