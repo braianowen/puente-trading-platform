@@ -53,6 +53,8 @@ docker --version
 ## 📦 Instalación con Docker (recomendado)
 🛑 Aviso: El repositorio incluye dos submodulos, es necesario clonarlo con git clone --recurse-submodules o garantizar la descarga de ambos submodulos.
 
+🛑 Una vez descargado crear el archivo .env tanto en el backend como en el front end usando el archivo .env-ejemplo, en el .env del frotend se podrán seleccionar los instrumentos a buscar.
+
 ```bash
 git clone --recurse-submodules git@github.com:braianowen/puente-trading-platform.git
 cd puente-trading-platform
