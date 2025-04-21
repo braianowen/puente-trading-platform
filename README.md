@@ -12,6 +12,42 @@ Una plataforma de trading que muestra valores de acciones y criptomonedas en tie
 - Python 3.9+ y Node.js 16+ (para instalación manual)
 - PostgreSQL (para instalación manual)
 
+#### Linux (Debian/Ubuntu)
+
+```bash
+# Docker y docker-compose
+sudo apt update
+sudo apt install docker.io docker-compose -y
+sudo systemctl enable docker
+sudo systemctl start docker
+
+# Python 3.9+
+sudo apt install python3.9 python3.9-venv python3-pip -y
+
+# Node.js 16+
+sudo apt install -y nodejs
+
+# PostgreSQL
+sudo apt update
+sudo apt install postgresql postgresql-contrib -y
+sudo systemctl enable postgresql
+sudo systemctl start postgresql
+```
+
+#### Windows
+
+- **Docker:** [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+- **Python 3.9+:** [Descargar Python](https://www.python.org/downloads/)
+- **Node.js 16+:** [Descargar Node.js v22](https://nodejs.org/es)
+- **PostgreSQL:** [Descargar PostgreSQL](https://www.postgresql.org/download/)
+
+Verificá las versiones en PowerShell:
+
+```powershell
+python --version
+node --version
+docker --version
+```
 ---
 
 ## 📦 Instalación con Docker (recomendado)
@@ -71,11 +107,6 @@ docker-compose down
 ### 🐧 Linux
 
 ```bash
-# Instalar PostgreSQL
-sudo apt update
-sudo apt install postgresql postgresql-contrib -y
-sudo systemctl status postgresql
-
 # Configurar la base de datos
 sudo -u postgres psql -c "ALTER USER admin WITH PASSWORD 'password';"
 sudo -u postgres psql -c "CREATE DATABASE mydb;"
@@ -100,6 +131,13 @@ npm run dev
 ```
 
 ### 🪟 Windows (PowerShell)
+
+```sql
+-- Configurar la base de datos
+ALTER USER admin WITH PASSWORD 'password';
+CREATE DATABASE mydb;
+GRANT ALL PRIVILEGES ON DATABASE mydb TO admin;
+```
 
 ```powershell
 # Backend
